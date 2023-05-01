@@ -226,6 +226,10 @@ nav{
 .bg-green{
    background: #25D366;
    margin-top: 20px;
+   box-shadow:none;
+}
+.bg-black{
+    box-shadow:none;
 }
 .mid-footer{
     display: flex;
