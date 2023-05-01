@@ -97,13 +97,13 @@ nav{
     right: 1%;
     top: 50%;
 }
-
 .longwidth{
     width: 300px;
     height: 46px;
     border: none;
     border-radius: 5px;
     outline: none;
+    font-size: 18px;
     text-align: center;
     color: #ffff;
     margin-left: 35px;
@@ -119,12 +119,12 @@ nav{
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 1000px;
+    height: 1100px;
     width: 375px;
     left: 0px;
     top: 660px;
-    border-radius: 53px;
-    background: #cfcfcf;;
+    border-radius: 40px;
+    background: fafafa;
 }.explore-text{
     font-size: 20px;
     line-height: 20px;
@@ -168,7 +168,6 @@ nav{
     margin-bottom: 40px;
     color: var(--major-color);
 }
-
 .price-tag{
     display: flex;
     justify-content: flex-end;
@@ -184,4 +183,62 @@ nav{
     border-radius: 25px;
     color: #ffff;
     background-color: #3b2119;
+}
+.shortwidth{
+    width: 130px;
+    height: 47px;
+    padding: 9px 7px;
+    box-shadow: 0px 12px 10px -3px rgba(245, 108, 64, 0.16);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-weight:bold;
+    font-size: 15px;
+    background-color: var(--major-color);
+    margin-top: 50px; 
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1800px;
+    width: 370px;
+    height: 800px;
+}
+.top-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    margin-top: 1px;
+}
+.top-footer>img,
+.mid-footer>img{
+    width: 100px;
+}
+.bg-green{
+   background: #25D366;
+   margin-top: 20px;
+}
+.mid-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+}
+.footer-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 44px;
+    width: 222px;
+    font-weight:bold;
+    font-size: 20px;
 }
