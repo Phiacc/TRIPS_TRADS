@@ -64,6 +64,7 @@ function showSlides(n) {
     }
     
     slides[slideIndex-1].style.display = "flex";
+    slides[slideIndex-1].className.add = "beadimage";
   }
   
 
