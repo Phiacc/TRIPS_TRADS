@@ -184,7 +184,7 @@ nav{
     height: 1100px;
     width: 375px;
     left: 0px;
-    top: 1250px;
+    top: 1200px;
     border-radius: 40px;
     background: fafafa;
 }.explore-text{
@@ -206,6 +206,7 @@ nav{
     flex-direction: column;
     width: 100px;
     height:370px;
+    margin-left: 20px;
 }
 .product-image{
     display: flex;
@@ -213,7 +214,7 @@ nav{
     height: 350px;
 }
 .product-image>img{
-    width: 100px;
+    width: 150px;
     height: 200px;
     
 }
@@ -225,7 +226,7 @@ nav{
     height: 150px;
 }
 .contents1{
-    margin-left: 50px;
+    margin-left: 70px;
 }
 .beads-slider{
     display: flex;
@@ -257,7 +258,7 @@ nav{
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    padding: 9px 10px;
+    padding: 9px 15px;
     margin-top: 1px;
     border-radius: 25px;
     color: #ffff;
