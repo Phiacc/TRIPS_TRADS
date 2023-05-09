@@ -242,9 +242,10 @@ nav{
     display: none;
     width: 200px;
     height: 200px;
+    margin-left: 15px;
     animation-name: fade;
     animation-duration: 1.5s;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 @keyframes fade {
     from {opacity: .4}
