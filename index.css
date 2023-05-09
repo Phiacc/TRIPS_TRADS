@@ -213,8 +213,8 @@ nav{
     height: 350px;
 }
 .product-image>img{
-    width: 190px;
-    height: 230px;
+    width: 100px;
+    height: 200px;
     
 }
 .product-info{
@@ -225,7 +225,7 @@ nav{
     height: 150px;
 }
 .contents1{
-    margin-left: 90px;
+    margin-left: 50px;
 }
 .beads-slider{
     display: flex;
