@@ -37,7 +37,7 @@ main{
 nav{
     display: flex;
     justify-content: space-between;
-    /* width: 0px; */
+    width: 100%;
     height: 13vh;
     padding: 30px 25px;
     background: black;
@@ -45,21 +45,6 @@ nav{
 .nav-logo{
     width: 60px;
     height: 35px;
-    transform: rotateY(0deg) rotateX(0deg) scale(0.5);
-    transform-style: preserve-3d;
-    animation: logoFlip 2s linear infinite;
-    transition: tranform 300ms ease;
-    transform-origin: 50% 50%
-}
-.nav-logo:hover{
-    transform: rotateY(30deg) rotateX(10deg);
-    cursor: pointer;
-}
-@keyframes logoFlip {
-    0%{transform: rotateY(-30deg) rotateX(0deg);}
-    50%{transform: rotateY(0deg) rotateX(10deg);}
-    100%{transform: rotateY(-100deg) rotateX(0deg);}
-
 }
 .ham{
     display: flex;
@@ -78,19 +63,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.bg-banner{
-    display: flex;
-    width: 375px;
-    height: 100vh;
- }.bg-banner img {
-     width: 660px;
-     height: 660px;
-     position: fixed;
-     left: 0px;
-     opacity: 5%;
-     size: contain;
-     
- }
+
 .hero-text{
     display: flex;
     width: 150px;
@@ -103,51 +76,26 @@ nav{
     width: 100%;
     height: 40vh;
 }
-.sliderImage{
-    display: none;
-    width: 320px;
-    height: 40vh;
-    animation-name: fade;
-    animation-duration: 2s;
-    /* border: 1px solid red; */
+.banner{
+    display: flex;
+    justify-content: space-between;
 }
-.back-drop{
-    width: 320px;
-    position: absolute;
-    background-color: #F56C40;
-   mix-blend-mode: overlay;
-   /* filter: blur(2px); */
+.banner-image{
+    display: flex;
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    margin: 0px 15px;
+    background-image: url(./assets/bannerimage.jpg);
+    background-size: contain;
 }
-.bead{
-    position: absolute;
-    left: 2%;
-    right: 75.7%;
-    top: 30%;
-    bottom: 88.13%;
-    transform: matrix(0.9, 0.43, -0.44, 1, 0, 0);
-    animation: beadMove 2s linear infinite;
-}
-@keyframes beadMove {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
-.black-bead{
-    position: absolute;
-    right: 4%;
-    top: 45%;
-    width: 43.27px;
-    height: 68.66px;
-    transform: rotate(-155.05deg);
-}
-
-/* .back-drop:hover{
-    
-} */
-.side-image{
-    width: 130px;
-    position: absolute;
-    right: 1%;
-    top: 50%;
+.brand-text{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .longwidth{
     width: 300px;
@@ -169,11 +117,7 @@ nav{
     color: #F56C40;
     border: 2px solid #F56C40;
 }
-.iwantboth:hover{
-    background-color: white;
-    color: #F56C40;
-    border: 2px solid #F56C40;
-}
+
 .majorcolor{
     background-color: var(--major-color);
 }
@@ -186,7 +130,7 @@ nav{
     height: 1100px;
     width: 375px;
     left: 0px;
-    top: 1250px;
+    top: 1100px;
     border-radius: 40px;
     background: fafafa;
 }.explore-text{
@@ -378,3 +322,44 @@ nav{
   .active {
     background-color: #717171;
   }
+@media screen and (min-width:600px){
+    .longwidth{
+        width: 330px;
+        height: 46px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 18px;
+        text-align: center;
+        color: #ffff;
+        font-weight: bold;
+        margin-left: 100px;
+        margin-top: 45px;
+        box-shadow: 0px 12px 10px -3px rgba(245, 108, 64, 0.16);
+        transition-duration: 0.5s;
+    }
+    .explore-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 1100px;
+        width: 375px;
+        left: 100px;
+        top: 1100px;
+        border-radius: 40px;
+        background: fafafa;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 2950px;
+        width: 370px;
+        height: 800px;
+        left: 100px;
+    }
+}

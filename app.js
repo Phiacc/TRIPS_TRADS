@@ -31,22 +31,7 @@
 
 //    }
 
-let imageSlide = 0;
-imageShow();
-
-function imageShow() {
-  let i;
-  let imgslides = document.getElementsByClassName("sliderImage");
-  for (i = 0; i < imgslides.length; i++) {
-    imgslides[i].style.display = "none";
-  }
-  imageSlide++;
-  if (imageSlide > imgslides.length) {imageSlide = 1}
-  imgslides[imageSlide-1].style.display = "flex";
-  setTimeout(imageShow, 3000);
-}
-
-let slideIndex = 1;
+// let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -54,31 +39,31 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("beadContainer");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
+// function showSlides(n) {
+//     let i;
+//     let slides = document.getElementsByClassName("beadContainer");
+//     if (n > slides.length) {slideIndex = 1}
+//     if (n < 1) {slideIndex = slides.length}
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
     
-    slides[slideIndex-1].style.display = "flex";
-    slides[slideIndex-1].className.add = "beadimage";
-  }
+//     slides[slideIndex-1].style.display = "flex";
+//     slides[slideIndex-1].className.add = "beadimage";
+//   }
   
 
-// let slideIndex = 0;
-// showSlides();
+let slideIndex = 0;
+showSlides();
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("beadContainer");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "flex";
-//   setTimeout(showSlides, 3000);
-// }
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("beadContainer");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "flex";
+  setTimeout(showSlides, 3000);
+}
