@@ -130,7 +130,7 @@ nav{
     height: 1100px;
     width: 375px;
     left: 0px;
-    top: 1100px;
+    top: 1150px;
     border-radius: 40px;
     background: fafafa;
 }.explore-text{
@@ -237,7 +237,7 @@ nav{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 2950px;
+    top: 2800px;
     width: 370px;
     height: 800px;
 }
@@ -319,6 +319,7 @@ nav{
   .active {
     background-color: #717171;
   }
+
 @media screen and (min-width:600px){
     .longwidth{
         width: 330px;

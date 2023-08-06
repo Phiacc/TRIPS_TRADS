@@ -31,39 +31,39 @@
 
 //    }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-// Next/previous controls
+// // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("beadContainer");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
+// function showSlides(n) {
+//     let i;
+//     let slides = document.getElementsByClassName("beadContainer");
+//     if (n > slides.length) {slideIndex = 1}
+//     if (n < 1) {slideIndex = slides.length}
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
     
-    slides[slideIndex-1].style.display = "flex";
-    slides[slideIndex-1].className.add = "beadimage";
-  }
+//     slides[slideIndex-1].style.display = "flex";
+//     slides[slideIndex-1].className.add = "beadimage";
+//   }
   
 
-// let slideIndex = 0;
-// showSlides();
+let slideIndex = 1;
+showSlides();
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("beadContainer");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "flex";
-//   setTimeout(showSlides, 3000);
-// }
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("beadContainer");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "flex";
+  setTimeout(showSlides, 3000);
+}
