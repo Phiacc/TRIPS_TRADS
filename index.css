@@ -179,8 +179,7 @@ nav{
     width: 200px;
     /* border: 2px solid red; */
     height: 500px;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 .beadContainer{
     display: none;
@@ -195,7 +194,6 @@ nav{
     from {opacity: .4}
     to {opacity: 1}
   }
-
 .beadimage{
     width: 150px;
     height: 150px;
@@ -292,7 +290,6 @@ nav{
     font-weight:bold;
     font-size: 20px;
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
