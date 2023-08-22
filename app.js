@@ -1,35 +1,33 @@
 // const slider = [
 //     {
-//         sliderimages:"./assets/Mask group (2).png"    
-//     },
-//     {
-//         sliderimages:"./assets/heroimage.png"
+//         sliderimages:"./assets/backdrop3.jpg",
+//         slidertext:"This collection involves sales of hair traditional bands(scrunchies)and real traditional beads made of raw/natural pearls and other fine rock matters. "
 //     },
 // ]
-// console.log(slider)
+// // console.log(slider)
 
-// const images = document.querySelector(".slider-image")
+// const images = document.querySelector(".info-section")
 
 // for (let i = 0; i < slider.length;i++){
-//     const sliderimage = document.createElement("back-drop")
-//     sliderimage.src = slider[i].sliderimages
-//     images.appendChild(sliderimage)
-//     sliderimage.classList.add("back-drop")
+//     const infosection = document.createElement("back-drop")
+//     infosection.src = slider[i].sliderimages
+//     images.appendChild(infosection)
+//     infosection.classList.add("back-drop")
 //     // clientNames.classList.add("client-name")
 
 // }
 
-// let counter= 0
-//     let variable = setInterval(carousel,3000)
-//     function carousel(){
-//     let imageLogo= slider.length[counter];
-//     images.innerHTML = slider[counter].sliderimages;
-//     counter++;
-//       if(counter===slider.length){
-//           counter=0
-//       }
+let counter= 0
+    let variable = setInterval(carousel,7000)
+    function carousel(){
+    let info= slider.length[counter];
+    images.innerHTML = slider[counter].sliderimages;
+    counter++;
+      if(counter===slider.length){
+          counter=0
+      }
 
-//    }
+   }
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
